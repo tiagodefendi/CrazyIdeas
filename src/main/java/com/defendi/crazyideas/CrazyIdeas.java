@@ -1,5 +1,6 @@
 package com.defendi.crazyideas;
 
+import com.defendi.crazyideas.item.ModCreativeModeTabs;
 import com.defendi.crazyideas.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -28,6 +29,7 @@ public class CrazyIdeas {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -44,9 +46,12 @@ public class CrazyIdeas {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        /*
+        add item to ingredients tab
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.HOLY_METAL);
         }
+         */
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
