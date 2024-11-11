@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "crazyideas:holy_metal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "crazyideas:holy_metal"
+  }
+}

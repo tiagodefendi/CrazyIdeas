@@ -19,9 +19,7 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CrazyIdeas.MOD_ID)
 public class CrazyIdeas {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "crazyideas";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public CrazyIdeas() {
@@ -31,13 +29,10 @@ public class CrazyIdeas {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
     }
 
