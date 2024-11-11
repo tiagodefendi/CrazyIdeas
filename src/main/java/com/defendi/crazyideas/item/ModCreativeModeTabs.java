@@ -1,6 +1,7 @@
 package com.defendi.crazyideas.item;
 
 import com.defendi.crazyideas.CrazyIdeas;
+import com.defendi.crazyideas.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.sacred_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.HOLY_METAL.get());
+                        pOutput.accept(ModBlocks.HOLY_METAL_BLOCK.get());
                     })
                     .build()
     );
