@@ -2,11 +2,15 @@ package com.defendi.crazyideas.block;
 
 import com.defendi.crazyideas.CrazyIdeas;
 import com.defendi.crazyideas.item.ModItems;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,7 +24,13 @@ public class ModBlocks {
 
     public static RegistryObject<Block> HOLY_METAL_BLOCK = registryBlock(
             "holy_metal_block",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK))
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .sound(SoundType.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(8.0F, 6.0F)
+            )
     );
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
