@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> SACRED_TAB = CREATIVE_MODE_TABS.register(
             "sacred_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HOLY_METAL.get()))
-                    .title(Component.translatable("creativetab.sacred_tab"))
+                    .title(Component.translatable("creativetab.crazyideas.sacred_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.HOLY_METAL.get());
                         pOutput.accept(ModBlocks.HOLY_METAL_BLOCK.get());
@@ -28,7 +28,8 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> UTILITY_TAB = CREATIVE_MODE_TABS.register(
             "utility_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get()))
-                    .title(Component.translatable("creativetab.utility_tab"))
+                    .withTabsBefore(SACRED_TAB.getId())
+                    .title(Component.translatable("creativetab.crazyideas.utility_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                     })

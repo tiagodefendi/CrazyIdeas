@@ -1,11 +1,11 @@
 {
-  "creativetab.sacred_tab": "Itens Sagrados",
+  "creativetab.crazyideas.sacred_tab": "Itens Sagrados",
 
   "item.crazyideas.holy_metal": "Metal Santo",
   "block.crazyideas.holy_metal_block": "Bloco de Metal Santo",
 
 
-  "creativetab.utility_tab": "Itens Utilitários",
+  "creativetab.crazyideas.utility_tab": "Itens Utilitários",
 
   "item.crazyideas.metal_detector": "Detector de Metais"
 }
