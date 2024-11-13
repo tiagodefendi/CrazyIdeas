@@ -1,6 +1,11 @@
 {
+  "creativetab.sacred_tab": "Sacred Items",
+
   "item.crazyideas.holy_metal": "Holy Metal",
   "block.crazyideas.holy_metal_block": "Holy Metal Block",
 
-  "creativetab.sacred_tab": "Sacred Items"
+
+  "creativetab.utility_tab": "Utility Items",
+
+  "item.crazyideas.metal_detector": "Metal Detector"
 }

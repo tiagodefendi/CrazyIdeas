@@ -1,7 +1,9 @@
 package com.defendi.crazyideas.item;
 
 import com.defendi.crazyideas.CrazyIdeas;
+import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,7 +15,17 @@ public class ModItems {
 
     public static final RegistryObject<Item> HOLY_METAL = ITEMS.register(
             "holy_metal",
-            () -> new Item(new Item.Properties())
+            () -> new Item(
+                    new Item.Properties()
+            )
+    );
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register(
+            "metal_detector",
+            () -> new MetalDetectorItem(
+                    new Item.Properties()
+                            .durability(100)
+            )
     );
 
     public static void register(IEventBus eventBus) {
