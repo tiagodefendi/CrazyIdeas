@@ -3,7 +3,10 @@ package com.defendi.crazyideas.item.utility;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
@@ -18,6 +21,8 @@ public class MetalDetectorItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
+        Level level = pContext.getLevel();
+
         if (!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
@@ -40,7 +45,10 @@ public class MetalDetectorItem extends Item {
         }
 
         pContext.getItemInHand().hurtAndBreak(
-                1, pContext.getPlayer(), pContext.getItemInHand().getEquipmentSlot()
+                1,
+                ((ServerLevel) level),
+                ((ServerPlayer) pContext.getPlayer()),
+                item -> pContext.getPlayer().onEquippedItemBroken(item, pContext.getItemInHand().getEquipmentSlot())
         );
 
         return InteractionResult.SUCCESS;
