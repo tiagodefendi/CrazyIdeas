@@ -32,6 +32,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.crazyideas.utility_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.CHISEL.get());
                     })
                     .build()
     );

@@ -1,6 +1,7 @@
 package com.defendi.crazyideas.item;
 
 import com.defendi.crazyideas.CrazyIdeas;
+import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -25,6 +26,14 @@ public class ModItems {
             () -> new MetalDetectorItem(
                     new Item.Properties()
                             .durability(100)
+            )
+    );
+
+    public static final RegistryObject<Item> CHISEL = ITEMS.register(
+            "chisel",
+            () -> new ChiselItem(
+                    new Item.Properties()
+                            .durability(250)
             )
     );
 
