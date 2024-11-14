@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "crazyideas:block/holy_catalyst_block"
+  }
+}

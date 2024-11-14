@@ -1,12 +1,11 @@
 package com.defendi.crazyideas.block;
 
 import com.defendi.crazyideas.CrazyIdeas;
+import com.defendi.crazyideas.block.sacred.HolyCatalystBlock;
 import com.defendi.crazyideas.item.ModItems;
-import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -30,6 +29,16 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops()
                     .strength(8.0F, 6.0F)
+            )
+    );
+
+    public static RegistryObject<Block> HOLY_CATALYST_BLOCK = registryBlock(
+            "holy_catalyst_block",
+            () -> new HolyCatalystBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0f, 0.0f)
             )
     );
 

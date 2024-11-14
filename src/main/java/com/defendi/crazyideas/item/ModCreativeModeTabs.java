@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.HOLY_METAL.get());
                         pOutput.accept(ModBlocks.HOLY_METAL_BLOCK.get());
+                        pOutput.accept(ModBlocks.HOLY_CATALYST_BLOCK.get());
                     })
                     .build()
     );

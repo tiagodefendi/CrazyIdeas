@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "" : {
+      "model": "crazyideas:block/holy_catalyst_block"
+    }
+  }
+}
