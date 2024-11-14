@@ -6,6 +6,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -42,14 +43,14 @@ public class MetalDetectorItem extends Item {
             if (!foundBlock) {
                 player.sendSystemMessage(Component.literal(("No metals found")));
             }
-        }
 
-        pContext.getItemInHand().hurtAndBreak(
-                1,
-                ((ServerLevel) level),
-                ((ServerPlayer) pContext.getPlayer()),
-                item -> pContext.getPlayer().onEquippedItemBroken(item, pContext.getItemInHand().getEquipmentSlot())
-        );
+            pContext.getItemInHand().hurtAndBreak(
+                    1,
+                    ((ServerLevel) level),
+                    ((ServerPlayer) pContext.getPlayer()),
+                    item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND)
+            );
+        }
 
         return InteractionResult.SUCCESS;
     }

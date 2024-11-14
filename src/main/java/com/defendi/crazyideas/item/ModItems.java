@@ -4,7 +4,6 @@ import com.defendi.crazyideas.CrazyIdeas;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
