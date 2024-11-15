@@ -24,7 +24,7 @@ public class MetalDetectorItem extends Item {
     public InteractionResult useOn(UseOnContext pContext) {
         Level level = pContext.getLevel();
 
-        if (!pContext.getLevel().isClientSide()) {
+        if (!level.isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
