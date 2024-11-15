@@ -2,7 +2,8 @@ package com.defendi.crazyideas.item;
 
 import com.defendi.crazyideas.CrazyIdeas;
 import com.defendi.crazyideas.item.food.ModFoodProperties;
-import com.defendi.crazyideas.item.sacred.SenzuBeanItem;
+import com.defendi.crazyideas.item.japan.SenzuBeanItem;
+import com.defendi.crazyideas.item.fuel.FuelItem;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.Item;
@@ -46,6 +47,21 @@ public class ModItems {
                             .food(ModFoodProperties.SENZU_BEAN)
             )
     );
+
+    public static final RegistryObject<Item> HELL_FUEL = ITEMS.register(
+            "hell_fuel",
+            () -> new FuelItem(
+                    new Item.Properties(),
+                    4800
+            )
+    );
+
+//    public static final RegistryObject<Item> MOTHER_FLAME = ITEMS.register(
+//            "mother_flame",
+//            () -> new Item(
+//                    new Item.Properties()
+//            )
+//    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,4 +1,4 @@
-package com.defendi.crazyideas.item.sacred;
+package com.defendi.crazyideas.item.japan;
 
 import com.defendi.crazyideas.item.food.ModFoodProperties;
 import net.minecraft.world.entity.LivingEntity;

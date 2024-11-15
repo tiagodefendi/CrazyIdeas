@@ -22,7 +22,17 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.HOLY_METAL.get());
                         pOutput.accept(ModBlocks.HOLY_METAL_BLOCK.get());
                         pOutput.accept(ModBlocks.HOLY_CATALYST_BLOCK.get());
-                        pOutput.accept(ModItems.SENZU_BEAN.get());
+                    })
+                    .build()
+    );
+
+    public static final RegistryObject<CreativeModeTab> SINFUL_TAB = CREATIVE_MODE_TABS.register(
+            "sinful_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HELL_FUEL.get()))
+                    .withTabsBefore(SACRED_TAB.getId())
+                    .title(Component.translatable("creativetab.crazyideas.sinful_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.HELL_FUEL.get());
                     })
                     .build()
     );
@@ -30,11 +40,22 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> UTILITY_TAB = CREATIVE_MODE_TABS.register(
             "utility_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get()))
-                    .withTabsBefore(SACRED_TAB.getId())
+                    .withTabsBefore(SINFUL_TAB.getId())
                     .title(Component.translatable("creativetab.crazyideas.utility_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.CHISEL.get());
+                    })
+                    .build()
+    );
+
+    public static final RegistryObject<CreativeModeTab> JAPAN_TAB = CREATIVE_MODE_TABS.register(
+            "japan_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SENZU_BEAN.get()))
+                    .withTabsBefore(UTILITY_TAB.getId())
+                    .title(Component.translatable("creativetab.crazyideas.japan_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.SENZU_BEAN.get());
                     })
                     .build()
     );

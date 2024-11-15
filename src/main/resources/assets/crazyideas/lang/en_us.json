@@ -6,9 +6,18 @@
   "block.crazyideas.holy_catalyst_block": "Holy Catalyst Block",
 
 
+  "creativetab.crazyideas.sinful_tab": "Sinful Items",
+
+  "item.crazyideas.hell_fuel": "Hell Fuel",
+
+
   "creativetab.crazyideas.utility_tab": "Utility Items",
 
   "item.crazyideas.metal_detector": "Metal Detector",
   "item.crazyideas.chisel": "Chisel",
+
+
+  "creativetab.crazyideas.japan_tab": "Japanese Items",
+
   "item.crazyideas.senzu_bean": "Senzu Bean"
 }
