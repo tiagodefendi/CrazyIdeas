@@ -37,8 +37,7 @@ public class ModBlocks {
             () -> new HolyCatalystBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_YELLOW)
                     .sound(SoundType.AMETHYST)
-                    .requiresCorrectToolForDrops()
-                    .strength(3.0f, 0.0f)
+                    .strength(1.0f, 0.0f)
             )
     );
 
