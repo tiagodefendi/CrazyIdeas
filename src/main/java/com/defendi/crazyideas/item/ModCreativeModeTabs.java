@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.HOLY_METAL.get());
                         pOutput.accept(ModBlocks.HOLY_METAL_BLOCK.get());
                         pOutput.accept(ModBlocks.HOLY_CATALYST_BLOCK.get());
+                        pOutput.accept(ModItems.SENZU_BEAN.get());
                     })
                     .build()
     );
@@ -34,7 +35,6 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.CHISEL.get());
-                        pOutput.accept(ModItems.SENZU_BEAN.get());
                     })
                     .build()
     );

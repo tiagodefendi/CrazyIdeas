@@ -2,6 +2,7 @@ package com.defendi.crazyideas.item;
 
 import com.defendi.crazyideas.CrazyIdeas;
 import com.defendi.crazyideas.item.food.ModFoodProperties;
+import com.defendi.crazyideas.item.sacred.SenzuBeanItem;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.Item;
@@ -39,7 +40,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> SENZU_BEAN = ITEMS.register(
             "senzu_bean",
-            () -> new Item(
+            () -> new SenzuBeanItem(
                     new Item.Properties()
                             .stacksTo(16)
                             .food(ModFoodProperties.SENZU_BEAN)
