@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.CHISEL.get());
+                        pOutput.accept(ModItems.SENZU_BEAN.get());
                     })
                     .build()
     );
