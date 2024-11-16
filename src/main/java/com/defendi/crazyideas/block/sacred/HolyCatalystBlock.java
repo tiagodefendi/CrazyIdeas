@@ -2,6 +2,7 @@ package com.defendi.crazyideas.block.sacred;
 
 import com.defendi.crazyideas.block.ModBlocks;
 import com.defendi.crazyideas.item.ModItems;
+import com.defendi.crazyideas.tags.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
@@ -27,13 +28,19 @@ public class HolyCatalystBlock extends Block {
             if (itemEntity.getItem().getItem() == Items.GOLD_INGOT) {
                 itemEntity.setItem(new ItemStack(ModItems.HOLY_METAL.get(), itemEntity.getItem().getCount()));
             }
-
-            if (itemEntity.getItem().getItem() == Items.GOLD_BLOCK) {
+            else if (itemEntity.getItem().getItem() == Items.GOLD_BLOCK) {
                 itemEntity.setItem(new ItemStack(ModBlocks.HOLY_METAL_BLOCK.get(), itemEntity.getItem().getCount()));
+            }
+            else if (isValidItem(itemEntity.getItem())) {
+                itemEntity.setItem(new ItemStack(Items.BREAD, itemEntity.getItem().getCount()*2));
             }
         }
 
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.BLESSABLE_ITEMS);
     }
 
     @Override
