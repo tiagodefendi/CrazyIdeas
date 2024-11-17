@@ -25,7 +25,7 @@ eclipse
 run
 run-data
 
-generated [main]
+generated
 src/test
 
 # Files from Forge MDK
