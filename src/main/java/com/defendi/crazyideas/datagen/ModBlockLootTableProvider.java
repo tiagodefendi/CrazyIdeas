@@ -25,6 +25,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                         ModBlocks.HOLY_CATALYST_BLOCK.get()
                 )
         );
+
+        dropSelf(ModBlocks.HOLY_LAMP.get());
     }
 
     @Override

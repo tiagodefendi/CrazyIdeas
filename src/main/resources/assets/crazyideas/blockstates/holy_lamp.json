@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "crazyideas:block/holy_lamp_off"
+    },
+    "clicked=true": {
+      "model": "crazyideas:block/holy_lamp_on"
+    }
+  }
+}

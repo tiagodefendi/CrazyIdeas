@@ -2,6 +2,7 @@ package com.defendi.crazyideas.block;
 
 import com.defendi.crazyideas.CrazyIdeas;
 import com.defendi.crazyideas.block.sacred.HolyCatalystBlock;
+import com.defendi.crazyideas.block.sacred.HolyLampBlock;
 import com.defendi.crazyideas.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -37,6 +38,18 @@ public class ModBlocks {
             () -> new HolyCatalystBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_YELLOW)
                     .sound(SoundType.AMETHYST)
+                    .strength(1.0f, 0.0f)
+            )
+    );
+
+    public static RegistryObject<Block> HOLY_LAMP = registryBlock(
+            "holy_lamp",
+            () -> new HolyLampBlock(BlockBehaviour.Properties.of()
+                    .lightLevel(
+                            state -> state.getValue(HolyLampBlock.CLICKED)? 15 : 0
+                    )
+                    .mapColor(MapColor.COLOR_LIGHT_BLUE)
+                    .sound(SoundType.LANTERN)
                     .strength(1.0f, 0.0f)
             )
     );
