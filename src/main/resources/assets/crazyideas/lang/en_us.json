@@ -4,6 +4,7 @@
   "item.crazyideas.holy_metal": "Holy Metal",
   "block.crazyideas.holy_metal_block": "Holy Metal Block",
   "item.crazyideas.angel_blade": "Angel Blade",
+  "tooltip.crazyideas.angel_blade": "\n§7When in Main Hand:§r\n §2 §b§l+ Infinity§r§2 Attack Damage\n 2.5 Attack Speed§r",
   "block.crazyideas.holy_catalyst_block": "Holy Catalyst Block",
   "tooltip.crazyideas.holy_catalyst_block": "Enhances the §3§lsacred§r energy and §3§lblesses§r what is offered to it",
   "block.crazyideas.holy_lamp": "Holy Lamp",

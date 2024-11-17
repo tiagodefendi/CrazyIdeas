@@ -1,9 +1,14 @@
 package com.defendi.crazyideas.item.sacred;
 
 import com.defendi.crazyideas.item.tool.SwordUnbreakableItem;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
+
+import java.util.List;
 
 public class AngelBladeItem extends SwordUnbreakableItem {
     public AngelBladeItem(Tier pTier, Properties pProperties) {
@@ -12,7 +17,20 @@ public class AngelBladeItem extends SwordUnbreakableItem {
 
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+        float mobHealth = (pTarget.getMaxHealth() + pTarget.getAbsorptionAmount())*(1+pTarget.getArmorCoverPercentage());
+        if (pAttacker instanceof Player player){
+//            pTarget.hurt(new DamageSource(DamageTypes.PLAYER_ATTACK, pTarget, pAttacker), mobHealth);
+//            pTarget.hurt(new DamageSource(DamageTypes.PLAYER_ATTACK, pTarget, pAttacker), Float.MAX_VALUE);
+            pTarget.setLastHurtByPlayer(player);
+        }
         pTarget.kill();
         return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
+
+//    @Override
+//    public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+//        pTooltipComponents.add(Component.translatable("tooltip.crazyideas.angel_blade"));
+//
+//        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+//    }
 }
