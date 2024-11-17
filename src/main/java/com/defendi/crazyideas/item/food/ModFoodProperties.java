@@ -13,21 +13,21 @@ public class ModFoodProperties {
                     .eatSeconds(0.4f)
                     .effect(new MobEffectInstance(
                             MobEffects.REGENERATION,
-                            200,
+                            70,
                             9,
                             false,
                             false
                     ),1.0f )
                     .effect(new MobEffectInstance(
                             MobEffects.SATURATION,
-                            200,
+                            70,
                             9,
                             false,
                             false
                     ),1.0f )
                     .effect(new MobEffectInstance(
                             MobEffects.DAMAGE_RESISTANCE,
-                            200,
+                            75,
                             4,
                             false,
                             false

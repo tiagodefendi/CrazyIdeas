@@ -15,7 +15,7 @@ public class SenzuBeanItem extends Item {
     public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity) {
         pLivingEntity.revive();
         pLivingEntity.removeAllEffects();
-        pLivingEntity.heal(pLivingEntity.getMaxHealth());
+        pLivingEntity.heal(Float.MAX_VALUE);
 
         return pLivingEntity.eat(pLevel, pStack, ModFoodProperties.SENZU_BEAN);
     }
