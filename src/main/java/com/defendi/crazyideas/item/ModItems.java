@@ -30,7 +30,7 @@ public class ModItems {
     public static final RegistryObject<Item> ANGEL_BLADE = ITEMS.register(
             "angel_blade",
             () -> new AngelBladeItem(
-                    ModToolTiers.HOLY_METAL,
+                    ModToolTiers.ANGEL_TOOL,
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
                                     ModToolTiers.HOLY_METAL,
@@ -69,7 +69,7 @@ public class ModItems {
             "hell_fuel",
             () -> new FuelItem(
                     new Item.Properties(),
-                    4800
+                    25600
             )
     );
 

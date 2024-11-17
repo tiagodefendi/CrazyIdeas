@@ -10,10 +10,20 @@ import net.minecraftforge.common.ForgeTier;
 
 public class ModToolTiers {
     public static final Tier HOLY_METAL = new ForgeTier(
+            4000,
+            8,
+            11f,
+            35,
+            ModTags.Blocks.NEED_HOLY_METAL_TOOL,
+            () -> Ingredient.of(ModItems.HOLY_METAL.get()),
+            ModTags.Blocks.INCORRECT_FOR_HOLY_METAL_TOOL
+    );
+
+    public static final Tier ANGEL_TOOL = new ForgeTier(
             -1,
-            4,
-            6f,
-            30,
+            10,
+            16f,
+            45,
             ModTags.Blocks.NEED_HOLY_METAL_TOOL,
             () -> Ingredient.of(ModItems.HOLY_METAL.get()),
             ModTags.Blocks.INCORRECT_FOR_HOLY_METAL_TOOL
