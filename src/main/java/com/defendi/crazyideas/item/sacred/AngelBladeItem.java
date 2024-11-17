@@ -17,13 +17,13 @@ public class AngelBladeItem extends SwordUnbreakableItem {
 
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        float mobHealth = (pTarget.getMaxHealth() + pTarget.getAbsorptionAmount())*(1+pTarget.getArmorCoverPercentage());
         if (pAttacker instanceof Player player){
-//            pTarget.hurt(new DamageSource(DamageTypes.PLAYER_ATTACK, pTarget, pAttacker), mobHealth);
-//            pTarget.hurt(new DamageSource(DamageTypes.PLAYER_ATTACK, pTarget, pAttacker), Float.MAX_VALUE);
-            pTarget.setLastHurtByPlayer(player);
+            pTarget.hurt(pAttacker.damageSources().playerAttack(player), Float.MAX_VALUE);
         }
-        pTarget.kill();
+        if (pTarget.isAlive()) {
+            pTarget.kill();
+        }
+
         return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
 
