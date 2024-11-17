@@ -1,6 +1,7 @@
 package com.defendi.crazyideas;
 
 import com.defendi.crazyideas.block.ModBlocks;
+import com.defendi.crazyideas.component.ModDataComponentTypes;
 import com.defendi.crazyideas.item.ModCreativeModeTabs;
 import com.defendi.crazyideas.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -30,6 +31,7 @@ public class CrazyIdeas {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponentTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
