@@ -61,7 +61,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "holy_lamp_on",
                         ResourceLocation.fromNamespaceAndPath(
                                 CrazyIdeas.MOD_ID,
-                                "block/" + "holy_lamp_on"
+                                "block/" + "holy_lamp_off"
                         )
                 )
         );
