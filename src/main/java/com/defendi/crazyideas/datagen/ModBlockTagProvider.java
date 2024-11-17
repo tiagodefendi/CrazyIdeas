@@ -2,6 +2,7 @@ package com.defendi.crazyideas.datagen;
 
 import com.defendi.crazyideas.CrazyIdeas;
 import com.defendi.crazyideas.block.ModBlocks;
+import com.defendi.crazyideas.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -27,5 +28,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(
                         ModBlocks.HOLY_METAL_BLOCK.get()
                 );
+
+        tag(ModTags.Blocks.NEED_HOLY_METAL_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }
