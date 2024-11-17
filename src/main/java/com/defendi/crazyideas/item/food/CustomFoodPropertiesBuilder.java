@@ -9,6 +9,8 @@ import net.minecraft.world.level.ItemLike;
 
 import java.util.Optional;
 
+// NOTE: Here I used Minecraft's own standard library but create a new method to select eatSeconds
+
 public class CustomFoodPropertiesBuilder extends FoodProperties.Builder {
     private int nutrition;
     private float saturationModifier;
