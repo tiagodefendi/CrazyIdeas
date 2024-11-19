@@ -21,6 +21,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.HOLY_METAL_BLOCK);
         blockWithItem(ModBlocks.HOLY_CATALYST_BLOCK);
         holyLampBlock();
+
+        blockWithItem(ModBlocks.EVIL_METAL_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -21,12 +21,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(
-                        ModBlocks.HOLY_METAL_BLOCK.get()
+                        ModBlocks.HOLY_METAL_BLOCK.get(),
+
+                        ModBlocks.EVIL_METAL_BLOCK.get()
                 );
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(
-                        ModBlocks.HOLY_METAL_BLOCK.get()
+                        ModBlocks.HOLY_METAL_BLOCK.get(),
+
+                        ModBlocks.EVIL_METAL_BLOCK.get()
                 );
 
         tag(ModTags.Blocks.NEED_HOLY_METAL_TOOL)

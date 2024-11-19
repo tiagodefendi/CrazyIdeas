@@ -36,6 +36,8 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(SACRED_TAB.getId())
                     .title(Component.translatable("creativetab.crazyideas.sinful_tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.EVIL_METAL.get());
+                        pOutput.accept(ModBlocks.EVIL_METAL_BLOCK.get());
                         pOutput.accept(ModItems.HELL_FUEL.get());
                     })
                     .build()

@@ -18,15 +18,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.HOLY_METAL_BLOCK.get());
-
         this.add(
                 ModBlocks.HOLY_CATALYST_BLOCK.get(),
                 block -> createSilkTouchOnlyTable(
                         ModBlocks.HOLY_CATALYST_BLOCK.get()
                 )
         );
-
         dropSelf(ModBlocks.HOLY_LAMP.get());
+
+        dropSelf(ModBlocks.EVIL_METAL_BLOCK.get());
     }
 
     @Override

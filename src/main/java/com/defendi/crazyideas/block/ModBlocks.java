@@ -22,12 +22,13 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CrazyIdeas.MOD_ID);
 
+    // SACRED BLOCK ---------------------------------------------------------------------------
     public static RegistryObject<Block> HOLY_METAL_BLOCK = registryBlock(
             "holy_metal_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
                     .sound(SoundType.METAL)
-                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .instrument(NoteBlockInstrument.HARP)
                     .requiresCorrectToolForDrops()
                     .strength(8.0F, 6.0F)
             )
@@ -52,6 +53,18 @@ public class ModBlocks {
                     .sound(SoundType.LANTERN)
                     .strength(1.0f, 0.0f)
             )
+    );
+
+    // SINFUL BLOCK ---------------------------------------------------------------------------
+    public static RegistryObject<Block> EVIL_METAL_BLOCK = registryBlock(
+            "evil_metal_block",
+        () -> new Block(BlockBehaviour.Properties.of()
+                .mapColor(MapColor.NETHER)
+                .sound(SoundType.METAL)
+                .instrument(NoteBlockInstrument.GUITAR)
+                .requiresCorrectToolForDrops()
+                .strength(8.0f, 6.0f)
+        )
     );
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
