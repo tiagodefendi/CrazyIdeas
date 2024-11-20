@@ -32,12 +32,15 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> SINFUL_TAB = CREATIVE_MODE_TABS.register(
             "sinful_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HELL_FUEL.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.EVIL_METAL.get()))
                     .withTabsBefore(SACRED_TAB.getId())
                     .title(Component.translatable("creativetab.crazyideas.sinful_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.EVIL_METAL.get());
                         pOutput.accept(ModBlocks.EVIL_METAL_BLOCK.get());
+
+                        pOutput.accept(ModItems.EVIL_METAL_HAMMER.get());
+
                         pOutput.accept(ModItems.HELL_FUEL.get());
                     })
                     .build()

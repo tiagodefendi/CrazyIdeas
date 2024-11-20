@@ -13,6 +13,9 @@ public class ModTags {
         public static final TagKey<Block> NEED_HOLY_METAL_TOOL = createTag("needs_holy_metal_tool");
         public static final TagKey<Block> INCORRECT_FOR_HOLY_METAL_TOOL = createTag("incorrect_for_holy_metal_tool");
 
+        public static final TagKey<Block> NEED_EVIL_METAL_TOOL = createTag("needs_holy_metal_tool");
+        public static final TagKey<Block> INCORRECT_FOR_EVIL_METAL_TOOL = createTag("incorrect_for_holy_metal_tool");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CrazyIdeas.MOD_ID, name));
         }

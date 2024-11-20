@@ -5,11 +5,10 @@ import com.defendi.crazyideas.item.food.ModFoodProperties;
 import com.defendi.crazyideas.item.japan.SenzuBeanItem;
 import com.defendi.crazyideas.item.fuel.FuelItem;
 import com.defendi.crazyideas.item.sacred.AngelBladeItem;
+import com.defendi.crazyideas.item.tool.HammerItem;
 import com.defendi.crazyideas.item.tool.ModToolTiers;
-import com.defendi.crazyideas.item.tool.SwordUnbreakableItem;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
-import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.SwordItem;
@@ -37,7 +36,7 @@ public class ModItems {
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
                                     ModToolTiers.HOLY_METAL,
-                                    3,
+                                    4,
                                     -1.5f
                             ))
             )
@@ -61,15 +60,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> EVIL_METAL_HAMMER = ITEMS.register(
             "evil_metal_hammer",
-            () -> new DiggerItem(
+            () -> new HammerItem(
+                    ModToolTiers.EVIL_METAL,
                     new Item.Properties()
                             .attributes(PickaxeItem.createAttributes(
                                     ModToolTiers.EVIL_METAL,
-                                    6,
+                                    -1,
                                     -3.5f
                             ))
             )
-    )
+    );
 
     // UTILITY ITEMS -------------------------------------------------------------------------
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register(

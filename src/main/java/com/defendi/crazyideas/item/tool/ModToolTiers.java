@@ -12,7 +12,7 @@ public class ModToolTiers {
     public static final Tier HOLY_METAL = new ForgeTier(
             4000,
             8,
-            11f,
+            10f,
             35,
             ModTags.Blocks.NEED_HOLY_METAL_TOOL,
             () -> Ingredient.of(ModItems.HOLY_METAL.get()),
@@ -22,11 +22,11 @@ public class ModToolTiers {
     public static final Tier EVIL_METAL = new ForgeTier(
             4000,
             8,
-            11f,
+            10f,
             35,
-            ModTags.Blocks.NEED_HOLY_METAL_TOOL,
+            ModTags.Blocks.NEED_EVIL_METAL_TOOL,
             () -> Ingredient.of(ModItems.HOLY_METAL.get()),
-            ModTags.Blocks.INCORRECT_FOR_HOLY_METAL_TOOL
+            ModTags.Blocks.INCORRECT_FOR_EVIL_METAL_TOOL
     );
 
     public static final Tier ANGEL_TOOL = new ForgeTier(

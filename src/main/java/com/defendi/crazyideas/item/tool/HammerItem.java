@@ -36,8 +36,8 @@ public class HammerItem extends DiggerItem {
         }
 
         if (traceResult.getDirection() == Direction.DOWN || traceResult.getDirection() == Direction.UP) {
-            for (int x = 0; x <= range; x++) {
-                for (int z = 0; z < range; z++){
+            for (int x = -range; x <= range; x++) {
+                for (int z = -range; z <= range; z++){
                     positions.add(new BlockPos(
                             initialBlockPos.getX() + x,
                             initialBlockPos.getY(),
@@ -48,8 +48,8 @@ public class HammerItem extends DiggerItem {
         }
 
         if (traceResult.getDirection() == Direction.NORTH || traceResult.getDirection() == Direction.SOUTH) {
-            for (int x = 0; x <= range; x++) {
-                for (int y = 0; y < range; y++){
+            for (int x = -range; x <= range; x++) {
+                for (int y = -range; y <= range; y++){
                     positions.add(new BlockPos(
                             initialBlockPos.getX() + x,
                             initialBlockPos.getY() + y,
@@ -59,9 +59,9 @@ public class HammerItem extends DiggerItem {
             }
         }
 
-        if (traceResult.getDirection() == Direction.NORTH || traceResult.getDirection() == Direction.SOUTH) {
-            for (int z = 0; z <= range; z++) {
-                for (int y = 0; y < range; y++){
+        if (traceResult.getDirection() == Direction.EAST || traceResult.getDirection() == Direction.WEST) {
+            for (int z = -range; z <= range; z++) {
+                for (int y = -range; y <= range; y++){
                     positions.add(new BlockPos(
                             initialBlockPos.getX(),
                             initialBlockPos.getY() + y,
