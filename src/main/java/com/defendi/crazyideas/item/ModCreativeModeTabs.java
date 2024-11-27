@@ -39,6 +39,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.EVIL_METAL.get());
                         pOutput.accept(ModBlocks.EVIL_METAL_BLOCK.get());
 
+                        pOutput.accept(ModItems.DEMON_KILLING_KNIFE.get());
                         pOutput.accept(ModItems.EVIL_METAL_HAMMER.get());
 
                         pOutput.accept(ModItems.HELL_FUEL.get());

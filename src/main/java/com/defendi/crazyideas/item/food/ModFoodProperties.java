@@ -10,24 +10,24 @@ public class ModFoodProperties {
                     .nutrition(20)
                     .saturationModifier(2.0f)
                     .alwaysEdible()
-                    .eatSeconds(0.4f)
+                    .eatSeconds(0.1f)
                     .effect(new MobEffectInstance(
                             MobEffects.REGENERATION,
-                            70,
+                            30,
                             9,
                             false,
                             false
                     ),1.0f )
                     .effect(new MobEffectInstance(
                             MobEffects.SATURATION,
-                            70,
+                            60,
                             9,
                             false,
                             false
                     ),1.0f )
                     .effect(new MobEffectInstance(
                             MobEffects.DAMAGE_RESISTANCE,
-                            75,
+                            30,
                             4,
                             false,
                             false

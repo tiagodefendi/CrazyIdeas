@@ -5,6 +5,7 @@ import com.defendi.crazyideas.item.food.ModFoodProperties;
 import com.defendi.crazyideas.item.japan.SenzuBeanItem;
 import com.defendi.crazyideas.item.fuel.FuelItem;
 import com.defendi.crazyideas.item.sacred.AngelBladeItem;
+import com.defendi.crazyideas.item.sinful.DemonKillingKnifeItem;
 import com.defendi.crazyideas.item.tool.HammerItem;
 import com.defendi.crazyideas.item.tool.ModToolTiers;
 import com.defendi.crazyideas.item.utility.ChiselItem;
@@ -35,8 +36,8 @@ public class ModItems {
                     ModToolTiers.ANGEL_TOOL,
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
-                                    ModToolTiers.HOLY_METAL,
-                                    4,
+                                    ModToolTiers.ANGEL_TOOL,
+                                    5,
                                     -1.5f
                             ))
             )
@@ -65,11 +66,26 @@ public class ModItems {
                     new Item.Properties()
                             .attributes(PickaxeItem.createAttributes(
                                     ModToolTiers.EVIL_METAL,
-                                    -1,
+                                    0,
                                     -3.5f
                             ))
             )
     );
+
+    public static final RegistryObject<Item> DEMON_KILLING_KNIFE = ITEMS.register(
+            "demon-killing_knife",
+            () -> new DemonKillingKnifeItem(
+                    ModToolTiers.EVIL_METAL,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    ModToolTiers.EVIL_METAL,
+                                    -5,
+                                    -1.25f
+                            ))
+            )
+    );
+
+    // HUNTER ITEMS --------------------------------------------------------------------------
 
     // UTILITY ITEMS -------------------------------------------------------------------------
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register(
