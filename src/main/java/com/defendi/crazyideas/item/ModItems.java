@@ -1,6 +1,7 @@
 package com.defendi.crazyideas.item;
 
 import com.defendi.crazyideas.CrazyIdeas;
+import com.defendi.crazyideas.item.death.DeathScythe;
 import com.defendi.crazyideas.item.food.ModFoodProperties;
 import com.defendi.crazyideas.item.japan.SenzuBeanItem;
 import com.defendi.crazyideas.item.fuel.FuelItem;
@@ -33,10 +34,10 @@ public class ModItems {
     public static final RegistryObject<Item> ANGEL_BLADE = ITEMS.register(
             "angel_blade",
             () -> new AngelBladeItem(
-                    ModToolTiers.ANGEL_TOOL,
+                    ModToolTiers.HOLY_METAL,
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
-                                    ModToolTiers.ANGEL_TOOL,
+                                    ModToolTiers.HOLY_METAL,
                                     5,
                                     -1.5f
                             ))
@@ -81,6 +82,20 @@ public class ModItems {
                                     ModToolTiers.EVIL_METAL,
                                     -5,
                                     -1.25f
+                            ))
+            )
+    );
+
+    // DEATH ---------------------------------------------------------------------------------
+    public static final RegistryObject<Item> DEATH_SCYTHE = ITEMS.register(
+            "death_scythe",
+            () -> new DeathScythe(
+                    ModToolTiers.OMNI_TOOL,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    ModToolTiers.OMNI_TOOL,
+                                    5,
+                                    -2.5f
                             ))
             )
     );
