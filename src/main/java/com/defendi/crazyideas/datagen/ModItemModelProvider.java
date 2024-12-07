@@ -25,6 +25,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.DEMON_KILLING_KNIFE);
         basicItem(ModItems.HELL_FUEL.get());
 
+        handheldItem(ModItems.DEATH_SCYTHE);
+
         basicItem(ModItems.METAL_DETECTOR.get());
         basicItem(ModItems.CHISEL.get());
 

@@ -29,7 +29,7 @@ public class ModToolTiers {
             ModTags.Blocks.INCORRECT_FOR_EVIL_METAL_TOOL
     );
 
-    public static final Tier ANGEL_TOOL = new ForgeTier(
+    public static final Tier OMNI_TOOL = new ForgeTier(
             -1,
             10,
             14f,

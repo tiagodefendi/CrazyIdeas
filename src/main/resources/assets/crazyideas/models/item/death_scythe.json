@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/death_scythe/death_scythe_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/death_scythe/death_scythe_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/death_scythe/death_scythe_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/death_scythe/death_scythe_item"
+    }
+  }
+}

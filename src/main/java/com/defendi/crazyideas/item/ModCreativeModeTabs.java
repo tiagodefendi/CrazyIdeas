@@ -45,12 +45,22 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.HELL_FUEL.get());
                     })
                     .build()
+
+    );public static final RegistryObject<CreativeModeTab> DEATH_TAB = CREATIVE_MODE_TABS.register(
+            "death_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DEATH_SCYTHE.get()))
+                    .withTabsBefore(SINFUL_TAB.getId())
+                    .title(Component.translatable("creativetab.crazyideas.death_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.DEATH_SCYTHE.get());
+                    })
+                    .build()
     );
 
     public static final RegistryObject<CreativeModeTab> UTILITY_TAB = CREATIVE_MODE_TABS.register(
             "utility_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_DETECTOR.get()))
-                    .withTabsBefore(SINFUL_TAB.getId())
+                    .withTabsBefore(DEATH_TAB.getId())
                     .title(Component.translatable("creativetab.crazyideas.utility_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
