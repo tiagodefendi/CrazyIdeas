@@ -28,7 +28,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
                     .sound(SoundType.METAL)
-                    .instrument(NoteBlockInstrument.HARP)
+                    .instrument(NoteBlockInstrument.FLUTE)
                     .requiresCorrectToolForDrops()
                     .strength(8.0F, 6.0F)
             )
