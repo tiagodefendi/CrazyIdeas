@@ -14,6 +14,7 @@ import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -135,6 +136,124 @@ public class ModItems {
 //                    new Item.Properties()
 //            )
 //    );
+
+    // ADVENTURE TIME ITEMS ---------------------------------------------------------------
+    public static final RegistryObject<Item> SCARLET = ITEMS.register(
+            "scarlet",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    5,
+                                    -2.4f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> ROOT_SWORD = ITEMS.register(
+            "root_sword",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    5,
+                                    -2.4f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> DEMON_BLOOD_SWORD = ITEMS.register(
+            "demon_blood_sword",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    5,
+                                    -2.4f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> GRAPE_SWORD = ITEMS.register(
+            "grape_sword",
+            () -> new SwordItem(
+                    Tiers.GOLD,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.GOLD,
+                                    3,
+                                    -1.25f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> SWORD_4D = ITEMS.register(
+            "4d_sword",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    5,
+                                    -2.4f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> GRASS_SWORD = ITEMS.register(
+            "grass_sword",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    5,
+                                    -2.4f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> FINN_SWORD = ITEMS.register(
+            "finn_sword",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    5,
+                                    -2.4f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> SMALL_SWORD = ITEMS.register(
+            "small_sword",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    2,
+                                    -1.9f
+                            ))
+            )
+    );
+
+    public static final RegistryObject<Item> NIGHT_SWORD = ITEMS.register(
+            "night_sword",
+            () -> new SwordItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    5,
+                                    -2.4f
+                            ))
+            )
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

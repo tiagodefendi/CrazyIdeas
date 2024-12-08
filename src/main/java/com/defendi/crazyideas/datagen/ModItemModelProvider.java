@@ -31,6 +31,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHISEL.get());
 
         basicItem(ModItems.SENZU_BEAN.get());
+
+
+        handheldItem(ModItems.SCARLET);
+        handheldItem(ModItems.ROOT_SWORD);
+        handheldItem(ModItems.DEMON_BLOOD_SWORD);
+        handheldItem(ModItems.GRAPE_SWORD);
+        handheldItem(ModItems.SWORD_4D);
+        handheldItem(ModItems.GRASS_SWORD);
+        handheldItem(ModItems.FINN_SWORD);
+        handheldItem(ModItems.SMALL_SWORD);
+        handheldItem(ModItems.NIGHT_SWORD);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

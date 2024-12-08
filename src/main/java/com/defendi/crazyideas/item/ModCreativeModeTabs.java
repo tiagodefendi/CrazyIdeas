@@ -80,6 +80,25 @@ public class ModCreativeModeTabs {
                     .build()
     );
 
+    public static final RegistryObject<CreativeModeTab> ADVENTURE_TIME_TAB = CREATIVE_MODE_TABS.register(
+            "adventure_time_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SCARLET.get()))
+                    .withTabsBefore(JAPAN_TAB.getId())
+                    .title(Component.translatable("creativetab.crazyideas.adventure_time_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.SCARLET.get());
+                        pOutput.accept(ModItems.ROOT_SWORD.get());
+                        pOutput.accept(ModItems.DEMON_BLOOD_SWORD.get());
+                        pOutput.accept(ModItems.GRAPE_SWORD.get());
+                        pOutput.accept(ModItems.SWORD_4D.get());
+                        pOutput.accept(ModItems.GRASS_SWORD.get());
+                        pOutput.accept(ModItems.FINN_SWORD.get());
+                        pOutput.accept(ModItems.SMALL_SWORD.get());
+                        pOutput.accept(ModItems.NIGHT_SWORD.get());
+                    })
+                    .build()
+    );
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
