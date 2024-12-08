@@ -68,7 +68,7 @@ public class ModItems {
                             .attributes(PickaxeItem.createAttributes(
                                     ModToolTiers.EVIL_METAL,
                                     0,
-                                    -3.5f
+                                    -3.8f
                             ))
             )
     );
@@ -95,7 +95,7 @@ public class ModItems {
                             .attributes(SwordItem.createAttributes(
                                     ModToolTiers.OMNI_TOOL,
                                     5,
-                                    -2.5f
+                                    -2.8f
                             ))
             )
     );
