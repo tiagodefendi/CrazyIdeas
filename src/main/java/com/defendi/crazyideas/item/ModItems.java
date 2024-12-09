@@ -10,6 +10,7 @@ import com.defendi.crazyideas.item.sinful.DemonKillingKnifeItem;
 import com.defendi.crazyideas.item.tool.HammerItem;
 import com.defendi.crazyideas.item.tool.KatanaItem;
 import com.defendi.crazyideas.item.tool.ModToolTiers;
+import com.defendi.crazyideas.item.tool.RapierItem;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.Item;
@@ -245,7 +246,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> SMALL_SWORD = ITEMS.register(
             "small_sword",
-            () -> new SwordItem(
+            () -> new RapierItem(
                     Tiers.DIAMOND,
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
