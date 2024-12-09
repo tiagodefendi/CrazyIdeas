@@ -8,6 +8,7 @@ import com.defendi.crazyideas.item.fuel.FuelItem;
 import com.defendi.crazyideas.item.sacred.AngelBladeItem;
 import com.defendi.crazyideas.item.sinful.DemonKillingKnifeItem;
 import com.defendi.crazyideas.item.tool.HammerItem;
+import com.defendi.crazyideas.item.tool.KatanaItem;
 import com.defendi.crazyideas.item.tool.ModToolTiers;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
@@ -136,6 +137,19 @@ public class ModItems {
 //                    new Item.Properties()
 //            )
 //    );
+
+    public static final RegistryObject<Item> KATANA = ITEMS.register(
+            "katana",
+            () -> new KatanaItem(
+                    Tiers.DIAMOND,
+                    new Item.Properties()
+                            .attributes(KatanaItem.createAttributes(
+                                    Tiers.DIAMOND,
+                                    4,
+                                    -2.f
+                            ))
+            )
+    );
 
     // ADVENTURE TIME ITEMS ---------------------------------------------------------------
     public static final RegistryObject<Item> SCARLET = ITEMS.register(

@@ -31,7 +31,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHISEL.get());
 
         basicItem(ModItems.SENZU_BEAN.get());
-
+        handheldItem(ModItems.KATANA);
 
         handheldItem(ModItems.SCARLET);
         handheldItem(ModItems.ROOT_SWORD);

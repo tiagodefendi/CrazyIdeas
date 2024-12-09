@@ -76,6 +76,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.crazyideas.japan_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SENZU_BEAN.get());
+                        pOutput.accept(ModItems.KATANA.get());
                     })
                     .build()
     );
