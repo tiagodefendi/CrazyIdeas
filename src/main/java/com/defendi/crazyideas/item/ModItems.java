@@ -70,7 +70,7 @@ public class ModItems {
                             .attributes(PickaxeItem.createAttributes(
                                     ModToolTiers.EVIL_METAL,
                                     0,
-                                    -3.8f
+                                    -3f
                             ))
             )
     );
