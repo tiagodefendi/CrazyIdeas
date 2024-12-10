@@ -24,7 +24,7 @@ public class RapierItem extends SwordItem {
             pPlayer.jumpFromGround();
         }
 
-        pPlayer.move(MoverType.SELF, pPlayer.getLookAngle().multiply(-1, 1, -1));
+        pPlayer.move(MoverType.SELF, pPlayer.getLookAngle().multiply(-1.5f, 0, -1.5f));
 
         return InteractionResultHolder.consume(itemstack);
     }
