@@ -2,6 +2,7 @@ package com.defendi.crazyideas.item.tool;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
@@ -23,7 +24,7 @@ public class RapierItem extends SwordItem {
             pPlayer.jumpFromGround();
         }
 
-        pPlayer.moveRelative(1f, pPlayer.getViewVector(1));
+        pPlayer.move(MoverType.SELF, pPlayer.getLookAngle().multiply(-1, 1, -1));
 
         return InteractionResultHolder.consume(itemstack);
     }
