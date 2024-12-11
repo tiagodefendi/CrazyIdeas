@@ -28,7 +28,7 @@ public class RapierItem extends SwordItem {
         );
 
         if(!pPlayer.getBlockStateOn().isAir()) {
-            pPlayer.addDeltaMovement(Vec3.ZERO.add(0, 1.0/3,0));
+            pPlayer.addDeltaMovement(Vec3.ZERO.add(0, (double) 1/3,0));
         }
 
         return InteractionResultHolder.consume(itemstack);
