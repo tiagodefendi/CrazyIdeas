@@ -146,8 +146,8 @@ public class ModItems {
                     new Item.Properties()
                             .attributes(KatanaItem.createAttributes(
                                     Tiers.DIAMOND,
-                                    4,
-                                    -2.f
+                                    6,
+                                    -2.8f
                             ))
             )
     );
@@ -199,8 +199,8 @@ public class ModItems {
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
                                     Tiers.GOLD,
-                                    3,
-                                    -1.25f
+                                    2,
+                                    -1.75f
                             ))
             )
     );
@@ -225,8 +225,8 @@ public class ModItems {
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
                                     Tiers.DIAMOND,
-                                    5,
-                                    -2.4f
+                                    2,
+                                    -1.5f
                             ))
             )
     );
@@ -251,8 +251,8 @@ public class ModItems {
                     new Item.Properties()
                             .attributes(SwordItem.createAttributes(
                                     Tiers.DIAMOND,
-                                    2,
-                                    -1.9f
+                                    -1,
+                                    6f
                             ))
             )
     );
