@@ -13,10 +13,7 @@ import com.defendi.crazyideas.item.tool.ModToolTiers;
 import com.defendi.crazyideas.item.tool.RapierItem;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -267,6 +264,271 @@ public class ModItems {
                                     5,
                                     -2.4f
                             ))
+            )
+    );
+
+    // HAMMERS ITEMS ---------------------------------------------------------------------------------
+    public static final RegistryObject<Item> MJOLNIR = ITEMS.register(
+            "mjolnir",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> JARNBJORN = ITEMS.register(
+            "jarnbjorn",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_PREMIUM = ITEMS.register(
+            "mjolnir_premium",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIRON = ITEMS.register(
+            "mjolniron",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> BLOODAXE = ITEMS.register(
+            "bloodaxe",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> FROGJOLNIR = ITEMS.register(
+            "frogjolnir",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_REPLICA = ITEMS.register(
+            "mjolnir_replica",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> TARENES_HAMMER = ITEMS.register(
+            "tarenes_hammer",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> LIGHTBRINGER = ITEMS.register(
+            "lightbringer",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_BLACK_URU = ITEMS.register(
+            "mjolnir_black_uru",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HELLNIR = ITEMS.register(
+            "hellnir",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> THUNDERSTRIKE_ERIC = ITEMS.register(
+            "thunderstrike-e",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> THUNDERSTRIKE_KEVIN = ITEMS.register(
+            "thunderstrike-k",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> STORMCASTER = ITEMS.register(
+            "stormcaster",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> STORMBREAKER = ITEMS.register(
+            "stormbreaker",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> STORMBREAKER_MCU = ITEMS.register(
+            "stormbreaker_mcu",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> CRUSHER = ITEMS.register(
+            "crusher",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_REFORGED = ITEMS.register(
+            "mjolnir_reforged",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_REFORGED_GOLD = ITEMS.register(
+            "mjolnir_reforged_gold",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_YGGDRASIL = ITEMS.register(
+            "mjolnir_yggdrasil",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_ULTIMATE = ITEMS.register(
+            "mjolnir_ultimate",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> THORIONS_HAMMER = ITEMS.register(
+            "thorions_hammer",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MJOLNIR_UNWORTHY = ITEMS.register(
+            "mjolnir_unworthy",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_ROK = ITEMS.register(
+            "hammer_of_rok",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_NERKKOD = ITEMS.register(
+            "hammer_of_nerkkod",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_MOKK = ITEMS.register(
+            "hammer_of_mokk",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_GREITHOTH = ITEMS.register(
+            "hammer_of_greithoth",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_KUURTH = ITEMS.register(
+            "hammer_of_kuurth",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_ANGRIR = ITEMS.register(
+            "hammer_of_angrir",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_NUL = ITEMS.register(
+            "hammer_of_nul",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> HAMMER_OF_SKADI = ITEMS.register(
+            "hammer_of_skadi",
+            () -> new MaceItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> YOLGJORD = ITEMS.register(
+            "yolgjord",
+            () -> new Item(
+                    new Item.Properties()
+                            .stacksTo(1)
+            )
+    );
+
+    public static final RegistryObject<Item> MEGINGJORD = ITEMS.register(
+            "megingjord",
+            () -> new Item(
+                    new Item.Properties()
+                            .stacksTo(1)
             )
     );
 

@@ -100,6 +100,49 @@ public class ModCreativeModeTabs {
                     .build()
     );
 
+    public static final RegistryObject<CreativeModeTab> HAMMERS_TAB = CREATIVE_MODE_TABS.register(
+            "hammers_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MJOLNIR.get()))
+                    .withTabsBefore(ADVENTURE_TIME_TAB.getId())
+                    .title(Component.translatable("creativetab.crazyideas.hammers_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.MJOLNIR.get());
+                        pOutput.accept(ModItems.JARNBJORN.get());
+                        pOutput.accept(ModItems.MJOLNIR_PREMIUM.get());
+                        pOutput.accept(ModItems.MJOLNIRON.get());
+                        pOutput.accept(ModItems.BLOODAXE.get());
+                        pOutput.accept(ModItems.FROGJOLNIR.get());
+                        pOutput.accept(ModItems.MJOLNIR_REPLICA.get());
+                        pOutput.accept(ModItems.TARENES_HAMMER.get());
+                        pOutput.accept(ModItems.LIGHTBRINGER.get());
+                        pOutput.accept(ModItems.MJOLNIR_BLACK_URU.get());
+                        pOutput.accept(ModItems.HELLNIR.get());
+                        pOutput.accept(ModItems.THUNDERSTRIKE_ERIC.get());
+                        pOutput.accept(ModItems.THUNDERSTRIKE_KEVIN.get());
+                        pOutput.accept(ModItems.STORMCASTER.get());
+                        pOutput.accept(ModItems.STORMBREAKER.get());
+                        pOutput.accept(ModItems.STORMBREAKER_MCU.get());
+                        pOutput.accept(ModItems.CRUSHER.get());
+                        pOutput.accept(ModItems.MJOLNIR_REFORGED.get());
+                        pOutput.accept(ModItems.MJOLNIR_REFORGED_GOLD.get());
+                        pOutput.accept(ModItems.MJOLNIR_YGGDRASIL.get());
+                        pOutput.accept(ModItems.MJOLNIR_ULTIMATE.get());
+                        pOutput.accept(ModItems.THORIONS_HAMMER.get());
+                        pOutput.accept(ModItems.MJOLNIR_UNWORTHY.get());
+                        pOutput.accept(ModItems.HAMMER_OF_ROK.get());
+                        pOutput.accept(ModItems.HAMMER_OF_NERKKOD.get());
+                        pOutput.accept(ModItems.HAMMER_OF_MOKK.get());
+                        pOutput.accept(ModItems.HAMMER_OF_GREITHOTH.get());
+                        pOutput.accept(ModItems.HAMMER_OF_KUURTH.get());
+                        pOutput.accept(ModItems.HAMMER_OF_ANGRIR.get());
+                        pOutput.accept(ModItems.HAMMER_OF_NUL.get());
+                        pOutput.accept(ModItems.HAMMER_OF_SKADI.get());
+                        pOutput.accept(ModItems.YOLGJORD.get());
+                        pOutput.accept(ModItems.MEGINGJORD.get());
+                    })
+                    .build()
+    );
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
