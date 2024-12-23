@@ -7,10 +7,7 @@ import com.defendi.crazyideas.item.japan.SenzuBeanItem;
 import com.defendi.crazyideas.item.fuel.FuelItem;
 import com.defendi.crazyideas.item.sacred.AngelBladeItem;
 import com.defendi.crazyideas.item.sinful.DemonKillingKnifeItem;
-import com.defendi.crazyideas.item.tool.HammerItem;
-import com.defendi.crazyideas.item.tool.KatanaItem;
-import com.defendi.crazyideas.item.tool.ModToolTiers;
-import com.defendi.crazyideas.item.tool.RapierItem;
+import com.defendi.crazyideas.item.tool.*;
 import com.defendi.crazyideas.item.utility.ChiselItem;
 import com.defendi.crazyideas.item.utility.MetalDetectorItem;
 import net.minecraft.world.item.*;
@@ -116,6 +113,46 @@ public class ModItems {
             () -> new ChiselItem(
                     new Item.Properties()
                             .durability(250)
+            )
+    );
+
+    public static final RegistryObject<Item> EMERALD_HELMET = ITEMS.register(
+            "emerald_helmet",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD_ARMOR_MATERIAL,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.HELMET.getDurability(35))
+            )
+    );
+
+    public static final RegistryObject<Item> EMERALD_CHESTPLATE = ITEMS.register(
+            "emerald_chestplate",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD_ARMOR_MATERIAL,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.CHESTPLATE.getDurability(35))
+            )
+    );
+
+    public static final RegistryObject<Item> EMERALD_LEGGINGS = ITEMS.register(
+            "emerald_leggings",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD_ARMOR_MATERIAL,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.LEGGINGS.getDurability(35))
+            )
+    );
+
+    public static final RegistryObject<Item> EMERALD_BOOTS = ITEMS.register(
+            "emerald_boots",
+            () -> new ArmorItem(
+                    ModArmorMaterials.EMERALD_ARMOR_MATERIAL,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.BOOTS.getDurability(35))
             )
     );
 

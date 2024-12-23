@@ -64,7 +64,13 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.crazyideas.utility_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+
                         pOutput.accept(ModItems.CHISEL.get());
+
+                        pOutput.accept(ModItems.EMERALD_HELMET.get());
+                        pOutput.accept(ModItems.EMERALD_CHESTPLATE.get());
+                        pOutput.accept(ModItems.EMERALD_LEGGINGS.get());
+                        pOutput.accept(ModItems.EMERALD_BOOTS.get());
                     })
                     .build()
     );
