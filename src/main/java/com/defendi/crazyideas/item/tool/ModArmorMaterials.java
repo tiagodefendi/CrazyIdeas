@@ -25,16 +25,16 @@ public class ModArmorMaterials {
             Util.make(
                     new EnumMap<>(ArmorItem.Type.class),
                     attribute -> {
-                        attribute.put(ArmorItem.Type.BOOTS, 4);
-                        attribute.put(ArmorItem.Type.LEGGINGS, 7);
-                        attribute.put(ArmorItem.Type.CHESTPLATE, 9);
-                        attribute.put(ArmorItem.Type.HELMET, 4);
-                        attribute.put(ArmorItem.Type.BODY, 11);
+                        attribute.put(ArmorItem.Type.BOOTS, 3);
+                        attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                        attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                        attribute.put(ArmorItem.Type.HELMET, 3);
+                        attribute.put(ArmorItem.Type.BODY, 10);
                     }
             ),
             15,
             4f,
-            0.1f,
+            0.0f,
             () -> Items.EMERALD,
             SoundEvents.ARMOR_EQUIP_DIAMOND
     );
