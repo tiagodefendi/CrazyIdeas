@@ -1,8 +1,8 @@
 {
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "crazyideas:item/mjoulnir_hand",
-		"particle": "crazyideas:item/mjoulnir_hand"
+		"0": "crazyideas:item/mjolnir_hand",
+		"particle": "crazyideas:item/mjolnir_hand"
 	},
 	"elements": [
 		{
