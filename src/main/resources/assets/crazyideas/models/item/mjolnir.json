@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/mjolnir"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/mjolnir/mjolnir_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/mjolnir/mjolnir_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/mjolnir/mjolnir_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/mjolnir/mjolnir_item"
+    }
   }
 }
