@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/lightbringer"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/lightbringer/lightbringer_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/lightbringer/lightbringer_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/lightbringer/lightbringer_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/lightbringer/lightbringer_item"
+    }
   }
 }
