@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/frogjolnir"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/frogjolnir/frogjolnir_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/frogjolnir/frogjolnir_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/frogjolnir/frogjolnir_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/frogjolnir/frogjolnir_item"
+    }
   }
 }
