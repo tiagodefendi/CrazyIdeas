@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/tarenes_hammer"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/tarenes_hammer/tarenes_hammer_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/tarenes_hammer/tarenes_hammer_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/tarenes_hammer/tarenes_hammer_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/tarenes_hammer/tarenes_hammer_item"
+    }
   }
 }
