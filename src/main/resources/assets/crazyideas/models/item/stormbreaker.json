@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/stormbreaker"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/stormbreaker/stormbreaker_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/stormbreaker/stormbreaker_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/stormbreaker/stormbreaker_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/stormbreaker/stormbreaker_item"
+    }
   }
 }
