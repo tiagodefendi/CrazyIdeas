@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/hellnir"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/hellnir/hellnir_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/hellnir/hellnir_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/hellnir/hellnir_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/hellnir/hellnir_item"
+    }
   }
 }
