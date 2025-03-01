@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/stormcaster"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/stormcaster/stormcaster_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/stormcaster/stormcaster_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/stormcaster/stormcaster_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/stormcaster/stormcaster_item"
+    }
   }
 }
