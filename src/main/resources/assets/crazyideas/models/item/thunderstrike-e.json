@@ -1,6 +1,20 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "crazyideas:item/thunderstrike-e"
+  "loader": "forge:separate_transforms",
+
+  "base": {
+    "parent": "crazyideas:item/thunderstrike-e/thunderstrike-e_hand"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "crazyideas:item/thunderstrike-e/thunderstrike-e_item"
+    },
+    "ground": {
+      "parent": "crazyideas:item/thunderstrike-e/thunderstrike-e_item"
+    },
+    "fixed": {
+      "parent": "crazyideas:item/thunderstrike-e/thunderstrike-e_item"
+    }
   }
 }
